@@ -3,13 +3,13 @@
 Mais uma vez, através do conhecimento, pesquisa e 
 desenvolvimento, a Elgin Developer Community inova e o maior 
 beneficiado é você, nosso parceiro. 
-<br>
+</br></br>
 A Elgin Developer Community orgulhosamente disponibiliza 
 ao mercado de Automação Comercial o E1_DigitalHub. Esperamos 
 que com esta nova ferramenta, você, nosso parceiro, perceba que 
 o nosso maior foco é Inovação. Nada menos do que isto. Inovação 
 do mercado de Automação Comercial. 
-<br>
+</br></br>
 Este App é um Intent Server, que contêm todos os módulos 
 presentes na E1_Android, a diferença é que instalando o App você 
 não precisa configurar nada em sua Automação Comercial, o 
