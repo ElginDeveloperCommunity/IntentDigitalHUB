@@ -1,0 +1,225 @@
+unit SatLib;
+
+interface
+
+uses
+  Androidapi.JNI.GraphicsContentViewText,
+  Androidapi.Helpers,
+  Androidapi.JNI.JavaTypes,
+  Androidapi.Jni.App,
+  System.Messaging,
+  System.Classes,
+  System.SysUtils,
+  FMX.Dialogs;
+
+type
+  TCallBack = reference to procedure(msg: string = ''; op: string = '');
+
+  TSatLib = class
+//             SatInitializer : JSatInitializer;
+            RetornoCallBack: TCallBack;
+
+            FMessageSubscriptionID : integer;
+            private
+              { private declarations }
+            protected
+              { protected declarations }
+            public
+              { public declarations }
+              procedure HandleActivityMessage(const Sender: TObject;const msg: TMessage);
+              procedure respostaBridge(dados: JIntent);
+
+              constructor Create;
+              procedure ConsultarSat(numSessao: Integer; Retorno: TCallBack);
+              function associarAssinatura(numSessao: Integer; codAtivacao: String; cnpjSH: String; assinaturaAC : String): String;
+              function ativarSat(numSessao: Integer; subComando: Integer; codAtivacao: String; cnpj: String; cUF : Integer): String;
+              function atualizarSoftwareSat(numSessao: Integer; codAtivacao : String): String;
+              function bloquearSat(numSessao: Integer; codAtivacao : String): String;
+              function cancelarUltimaVenda(numSessao: Integer; codAtivacao: String; numeroCFe: String; dadosCancelamento : String): String;
+              function configurarInterfaceDeRede(numSessao: Integer; codAtivacao: String; dadosConfiguracao : String): String;
+              function consultarNumeroSessao(numSessao: Integer; codAtivacao: String; cNumeroDeSessao: Integer): String;
+              function consultarStatusOperacional(numSessao: Integer; codAtivacao: String): String;
+              function consultarUltimaSessaoFiscal(numSessao: Integer; codAtivacao: String): String;
+              function desbloquearSat(numSessao: Integer; codAtivacao: String): String;
+              function enviarDadosVenda(numSessao: Integer; codAtivacao: String; dadosVenda: String): String;
+              function extrairLogs(numSessao: Integer; codAtivacao: String): String;
+              procedure gerarNumeroSessao(Retorno: TCallBack);
+              function testeFimAFim(numSessao: Integer; codAtivacao: String; dadosVenda: String): String;
+              function trocarCodigoDeAtivacao(numSessao: Integer; codAtivacao: String; opcao: Integer; novoCodigo: String; confNovoCodigo: String): String;
+            end;
+
+var
+  Sat : TSatLib;
+  op: string = '';
+
+implementation
+
+function TSatLib.associarAssinatura(numSessao: Integer; codAtivacao, cnpjSH,
+  assinaturaAC: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.associarAssinatura(numSessao, StringToJString( codAtivacao ), StringToJString( cnpjSH ), StringToJString( assinaturaAC )));
+end;
+
+function TSatLib.ativarSat(numSessao, subComando: Integer; codAtivacao,
+  cnpj: String; cUF: Integer): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.ativarSat(numSessao,subComando, StringToJString( codAtivacao ), StringToJString( cnpj ), cUF));
+end;
+
+function TSatLib.atualizarSoftwareSat(numSessao: Integer;
+  codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.atualizarSoftwareSat(numSessao, StringToJString( codAtivacao )));
+end;
+
+function TSatLib.bloquearSat(numSessao: Integer; codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.bloquearSat(numSessao, StringToJString( codAtivacao )));
+end;
+
+function TSatLib.cancelarUltimaVenda(numSessao: Integer; codAtivacao, numeroCFe,
+  dadosCancelamento: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.cancelarUltimaVenda(numSessao, StringToJString( codAtivacao ), StringToJString( numeroCFe ) , StringToJString( dadosCancelamento )));
+end;
+
+function TSatLib.configurarInterfaceDeRede(numSessao: Integer; codAtivacao,
+  dadosConfiguracao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.configurarInterfaceDeRede(numSessao, StringToJString( codAtivacao ), StringToJString( dadosConfiguracao )));
+end;
+
+function TSatLib.consultarNumeroSessao(numSessao: Integer; codAtivacao: String;
+  cNumeroDeSessao: Integer): String;
+begin
+//  Result := JStringToString(TJSat.JavaClass.consultarNumeroSessao(numSessao, StringToJString( codAtivacao ),  cNumeroDeSessao));
+end;
+
+procedure TSatLib.ConsultarSat(numSessao: Integer; Retorno: TCallBack);
+var
+  IntentBridge: JIntent;
+  comando: string;
+begin
+   //   Result := JStringToString(TJSat.JavaClass.consultarSat(numSessao));
+   RetornoCallBack := Retorno;
+
+   IntentBridge := TJIntent.JavaClass.init(StringToJString('com.elgin.e1.digitalhub.SAT'));
+
+   comando:= '[{"funcao":"consultarSat",'+
+                  '"parametros":{"numSessao":' + IntToStr(numSessao) + '}}]';
+
+   IntentBridge.putExtra(StringToJString('comando'), StringToJString(comando));
+
+   FMessageSubscriptionID := TMessageManager.DefaultManager.SubscribeToMessage(TMessageResultNotification, HandleActivityMessage);
+   TAndroidHelper.Activity.startActivityForResult(IntentBridge, 4321);
+end;
+
+function TSatLib.consultarStatusOperacional(numSessao: Integer;
+  codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.consultarStatusOperacional(numSessao, StringToJString( codAtivacao )));
+end;
+
+function TSatLib.consultarUltimaSessaoFiscal(numSessao: Integer;
+  codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.consultarUltimaSessaoFiscal(numSessao, StringToJString( codAtivacao )));
+end;
+
+constructor TSatLib.Create;
+begin
+//    SatInitializer := TJSatInitializer.Create;
+//    SatInitializer.create(TAndroidHelper.Context);
+end;
+
+function TSatLib.desbloquearSat(numSessao: Integer;
+  codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.desbloquearSat(numSessao, StringToJString( codAtivacao )));
+end;
+
+function TSatLib.enviarDadosVenda(numSessao: Integer; codAtivacao,
+  dadosVenda: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.enviarDadosVenda(numSessao, StringToJString( codAtivacao ),StringToJString( dadosVenda )));
+end;
+
+function TSatLib.extrairLogs(numSessao: Integer; codAtivacao: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.extrairLogs(numSessao, StringToJString( codAtivacao )));
+end;
+
+procedure TSatLib.gerarNumeroSessao(Retorno: TCallBack);
+var
+  IntentBridge: JIntent;
+  comando: string;
+begin
+//   Result := TJSat.JavaClass.gerarNumeroSessao;
+   RetornoCallBack := Retorno;
+
+   IntentBridge := TJIntent.JavaClass.init(StringToJString('com.elgin.e1.digitalhub.SAT'));
+
+   comando:= '[{"funcao":"gerarNumeroSessao",'+
+                  '"parametros":{}}]';
+
+   IntentBridge.putExtra(StringToJString('comando'), StringToJString(comando));
+
+   FMessageSubscriptionID := TMessageManager.DefaultManager.SubscribeToMessage(TMessageResultNotification, HandleActivityMessage);
+   TAndroidHelper.Activity.startActivityForResult(IntentBridge, 4321);
+end;
+
+procedure TSatLib.HandleActivityMessage(const Sender: TObject;
+  const msg: TMessage);
+begin
+try
+  if msg is TMessageResultNotification then
+    begin
+      TMessageManager.DefaultManager.Unsubscribe(TMessageResultNotification, FMessageSubscriptionID);
+      FMessageSubscriptionID := 0;
+      if TMessageResultNotification(msg).RequestCode = 4321 then
+      begin
+         if TMessageResultNotification(msg).ResultCode = TJActivity.JavaClass.RESULT_OK then
+          respostaBridge(TMessageResultNotification(msg).Value)
+         else if TMessageResultNotification(msg).ResultCode =  TJActivity.JavaClass.RESULT_CANCELED then
+              respostaBridge(TMessageResultNotification(msg).Value)
+         else
+              ShowMessage('Erro resposta Bridge');
+
+      end;
+    end;
+
+  except
+      on e: exception do
+        ShowMessage('Erro resposta Bridge: ' + e.Message);
+  end;
+
+end;
+
+procedure TSatLib.respostaBridge(dados: JIntent);
+var
+  msg : string;
+begin
+  if Assigned(dados) then
+      msg :=  JStringToString(dados.getStringExtra(StringToJString('retorno')));
+
+   RetornoCallBack(msg, op);
+   log.d('RETORNO: ' + msg);
+end;
+
+function TSatLib.testeFimAFim(numSessao: Integer; codAtivacao,
+  dadosVenda: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.testeFimAFim(numSessao, StringToJString( codAtivacao ),StringToJString( dadosVenda )));
+end;
+
+function TSatLib.trocarCodigoDeAtivacao(numSessao: Integer; codAtivacao: String;
+  opcao: Integer; novoCodigo, confNovoCodigo: String): String;
+begin
+//   Result := JStringToString(TJSat.JavaClass.trocarCodigoDeAtivacao(numSessao, StringToJString( codAtivacao ), opcao, StringToJString( novoCodigo ), StringToJString( confNovoCodigo )));
+end;
+
+initialization
+
+ Sat := TSatLib.Create;
+
+end.
