@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Forms_Intent_Digital_Hub.Printer.Views.PrinterImageView"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Padding="30,0" Spacing="10" HeightRequest="350" Orientation="Vertical" >
+        <StackLayout HeightRequest="5" >
+            <Label Text="IMPRESSÃO DE IMAGEM" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+            <Label Text="PRÉ-VISUALIZAÇÃO" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+        </StackLayout>
+        <StackLayout x:Name="imageStack" Style="{StaticResource imageStack}">
+            <Image x:Name="displayImage"  Style="{StaticResource imageStyle}"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Style="{StaticResource inputLabel}" Text="ESTILIZAÇÃO"/>
+            <StackLayout Style="{StaticResource cutPaperStack }">
+                <Label Text="CUT PAPER" Style="{StaticResource cutPaperLabel}"/>
+                <CheckBox x:Name="isCutPaper"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Style="{StaticResource buttonsStack}">
+            <Button x:Name="btnSelectImage" Text="SELECIONAR" Style="{StaticResource buttonStyle}"/>
+            <Button x:Name="btnPrintImage" Text="IMPRIMIR" Style="{StaticResource buttonStyle}"/>
+        </StackLayout>
+    </StackLayout>
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="inputLabel">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="Padding" Value="0,10,-10,0"/>
+            </Style>
+            <Style TargetType="StackLayout" x:Key="imageStack">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HeightRequest" Value="130"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="Margin" Value="0,50,0,0"/>
+            </Style>
+            <Style TargetType="Image" x:Key="imageStyle">
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="StackLayout" x:Key="cutPaperStack">
+                <Setter Property="Orientation" Value="Horizontal"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="Label" x:Key="cutPaperLabel">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Padding" Value="0,3,0,0"/>
+            </Style>
+            <Style TargetType="StackLayout" x:Key="buttonsStack">
+                <Setter Property="Orientation" Value="Horizontal"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Spacing" Value="50"/>
+            </Style>
+            <Style TargetType="Button" x:Key="buttonStyle">
+                <Setter Property="BackgroundColor" Value="#0069A5"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="WidthRequest" Value="200"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+</ContentView>
