@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intent_digital_hub/Widgets/widgets.dart';
 import 'package:intent_digital_hub/XmStorageService/xml_database_service.dart';
+import 'package:intent_digital_hub/pages/balanca/balance_page.dart';
 import 'package:intent_digital_hub/pages/bridge/bridge_page.dart';
 import 'package:intent_digital_hub/pages/impressora/printer_menu.dart';
 import 'package:intent_digital_hub/pages/sat/sat.dart';
@@ -77,12 +78,17 @@ class _HomePageState extends State<HomePage> {
                   moduleButton(
                       nameButton: 'IMPRESSORA',
                       assetImage: 'assets/images/printer.png',
-                      widgetScreen: const PrinterMenutPage())
+                      widgetScreen: const PrinterMenuPage())
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  moduleButton(
+                    nameButton: "BALANÇA",
+                    assetImage: "assets/images/balanca.png",
+                    widgetScreen: const BalancePage(),
+                  ),
                   moduleButton(
                       nameButton: 'SAT',
                       assetImage: 'assets/images/sat.png',

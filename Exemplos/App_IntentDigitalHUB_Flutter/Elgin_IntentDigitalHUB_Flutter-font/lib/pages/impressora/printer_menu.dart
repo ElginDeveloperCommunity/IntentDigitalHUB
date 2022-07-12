@@ -16,14 +16,14 @@ import 'printer_barcode.dart';
 import 'printer_image.dart';
 import 'printer_text.dart';
 
-class PrinterMenutPage extends StatefulWidget {
-  const PrinterMenutPage({Key? key}) : super(key: key);
+class PrinterMenuPage extends StatefulWidget {
+  const PrinterMenuPage({Key? key}) : super(key: key);
 
   @override
   PrinterMenutPageState createState() => PrinterMenutPageState();
 }
 
-class PrinterMenutPageState extends State<PrinterMenutPage> {
+class PrinterMenutPageState extends State<PrinterMenuPage> {
   TextEditingController inputIp =
       TextEditingController(text: "192.168.0.104:9100");
 

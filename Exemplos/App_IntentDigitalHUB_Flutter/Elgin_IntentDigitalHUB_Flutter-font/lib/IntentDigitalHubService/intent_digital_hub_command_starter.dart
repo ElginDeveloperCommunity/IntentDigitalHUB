@@ -4,23 +4,25 @@ import 'intent_digital_hub_module.dart';
 
 part 'intent_digital_hub_command.dart';
 
-//Classe utilizada para facilitar o start dos commandos do IDH
+//Classe service utilizada para executar o inicio da intent que carrega o comando Bridge
 class IntentDigitalHubCommandStarter {
   //Previne a classe de ser instanciada
   IntentDigitalHubCommandStarter._();
 
   static const _platform = MethodChannel('elgin.intent_digital_hub');
 
-  static Future startCommand(IntentDigitalHubCommand digitalHubCommand) {
+  //Inicia um comando do IDH
+  static Future<String> startCommand(
+      IntentDigitalHubCommand digitalHubCommand) async {
     Map<String, dynamic> args = {
       'commandJSON': digitalHubCommand._commandJSON,
       'intentPath': digitalHubCommand._correspondingHubModule.intentPath,
     };
 
-    return _platform.invokeMethod("startIntent", {"args": args});
+    return await _platform.invokeMethod("startIntent", {"args": args});
   }
 
-  //Concatena vários comandos
+  //Inicia múltiplos comandos do IDH, possuí a lógica que concatena o JSON de múltiplos comandos em um só JsonArray
   static Future<String> startCommands(
       List<IntentDigitalHubCommand> digitalHubCommands) async {
     if (digitalHubCommands.isEmpty) {

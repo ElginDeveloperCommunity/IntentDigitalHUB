@@ -142,7 +142,7 @@ class GeneralWidgets extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(right: 40),
         child: Text(
-          "Intent Digital Hub - Flutter 1.0.0",
+          "Intent Digital Hub - Flutter 1.1.0",
           style: TextStyle(
               color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 18),
         ),
@@ -240,7 +240,7 @@ class GeneralWidgets extends StatelessWidget {
   }
 
   static Widget radioBtn(
-      dynamic value, String groupSelected, Function onChanged) {
+      String value, String groupSelected, Function onChanged) {
     return SizedBox(
       height: 50,
       width: 190,
