@@ -1,0 +1,71 @@
+.mainLogo {
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  top: 0px;
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.customBox {
+  display: flexbox;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 2px;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+}
+
+.customBox2 {
+  display: flexbox;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 5px;
+  margin-top: 2px;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+}
+
+.paymentButtonSelected {
+  border-color: #23f600;
+}
+
+.box {
+  display: flexbox;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 2px;
+  height: 400px;
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.paymentImg {
+  height: 30px;
+  margin-top: 0px;
+}
+
+.alertPassword {
+}
+
+.alertPassword .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
+  padding-top: 0 !important;
+  padding-bottom: 0 ;
+}

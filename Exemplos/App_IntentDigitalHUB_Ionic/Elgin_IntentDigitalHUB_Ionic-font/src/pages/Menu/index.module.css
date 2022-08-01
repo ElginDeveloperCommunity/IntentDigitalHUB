@@ -1,0 +1,17 @@
+.menuLogo {
+  width: 420px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.menuButton {
+  height: 100px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.menuButton ion-img {
+  height: 50px;
+  margin-bottom: 10px;
+}

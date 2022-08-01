@@ -1,0 +1,6 @@
+{
+	"appId": "com.elgin.ionic.intent_digital_hub",
+	"appName": "Ionic_IntentDigitalHub",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

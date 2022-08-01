@@ -1,0 +1,20 @@
+.customBox{
+  display: flexbox;  
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  height: 390px;
+  width: 50%;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.buttonsColumn{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.radio {
+  margin-bottom: -5px;
+}

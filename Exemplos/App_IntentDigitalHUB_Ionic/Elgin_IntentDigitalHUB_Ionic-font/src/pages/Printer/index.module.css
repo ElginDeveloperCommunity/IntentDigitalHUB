@@ -1,0 +1,60 @@
+.box {
+  display: flex;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 2px;
+}
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  background-color: transparent;
+}
+
+.printerOptionImg {
+  height: 60px;
+}
+
+.menuButtonSmall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.menuButtonSmall .printerOptionImg {
+  height: 40px;
+  margin-right: 5px;
+}
+
+.menuButton h4, .menuButtonSmall h4 {
+  color: black;
+  font-weight: bold;
+  font-size: x-small;
+  text-align: center;
+}
+
+.radio {
+  margin-bottom: -5px;
+}
+
+.bigBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+}
+
+.contentSqueeze {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
