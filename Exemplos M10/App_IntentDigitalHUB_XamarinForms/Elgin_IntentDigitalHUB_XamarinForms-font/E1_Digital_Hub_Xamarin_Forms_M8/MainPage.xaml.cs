@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin_Forms_Intent_Digital_Hub.Permissions;
 using Xamarin_Forms_Intent_Digital_Hub.Utils;
+using Xamarin_Forms_Intent_Digital_Hub.Balance;
 
 namespace Xamarin_Forms_Intent_Digital_Hub
 {
@@ -50,6 +51,11 @@ namespace Xamarin_Forms_Intent_Digital_Hub
         async void OpenSatPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SatPage());
+        }
+
+        async void OpenBalancePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BalancPage());
         }
     }
 }

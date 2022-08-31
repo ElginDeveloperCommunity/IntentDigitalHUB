@@ -9,5 +9,6 @@
         public static IntentDigitalHubModule BRIDGE = new IntentDigitalHubModule("com.elgin.e1.digitalhub.BRIDGE");
         public static IntentDigitalHubModule SAT = new IntentDigitalHubModule("com.elgin.e1.digitalhub.SAT");
         public static IntentDigitalHubModule TERMICA = new IntentDigitalHubModule("com.elgin.e1.digitalhub.TERMICA");
+        public static IntentDigitalHubModule BALANCA = new IntentDigitalHubModule("com.elgin.e1.digitalhub.BALANCA");
     }
 }

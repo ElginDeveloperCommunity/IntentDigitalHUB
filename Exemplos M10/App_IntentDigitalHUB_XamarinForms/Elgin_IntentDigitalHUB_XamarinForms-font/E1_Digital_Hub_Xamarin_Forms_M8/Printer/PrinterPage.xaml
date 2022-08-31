@@ -39,7 +39,7 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout>
-                <Label Text="Intent Digital Hub - Xamarin Forms 1.0.0" TextColor="Gray" HorizontalOptions="End" Padding="0,0,10,10"/>
+                <Label Text="Intent Digital Hub - Xamarin Forms 1.1.0" TextColor="Gray" HorizontalOptions="End" Padding="0,0,10,10"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

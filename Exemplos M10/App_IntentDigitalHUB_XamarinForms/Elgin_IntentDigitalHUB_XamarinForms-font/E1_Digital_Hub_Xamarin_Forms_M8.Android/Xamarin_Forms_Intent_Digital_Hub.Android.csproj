@@ -17,7 +17,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
@@ -38,7 +38,7 @@
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidKeyStore>true</AndroidKeyStore>
-    <AndroidSigningKeyStore>C:\Users\victo\AppData\Local\Xamarin\Mono for Android\Keystore\E1_Xamarin_Android\E1_Xamarin_Android.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>C:\Users\mgssl\AppData\Local\Xamarin\Mono for Android\Keystore\E1_Xamarin_Android\E1_Xamarin_Android.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>E1_Xamarin_Android</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>E1_Xamarin_Android</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>E1_Xamarin_Android</AndroidSigningKeyPass>
@@ -68,8 +68,8 @@
     <PackageReference Include="Xamarin.AndroidX.Concurrent.Futures">
       <Version>1.1.0.5</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IntentServices\IntentDigitalHubCommandStarter.cs" />
@@ -109,7 +109,9 @@
     <None Include="Resources\AboutResources.txt" />
     <AndroidResource Include="Resources\font\robotobold.ttf" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\balanca.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\E1_Digital_Hub_Xamarin_Forms_M8\Xamarin_Forms_Intent_Digital_Hub.csproj">
       <Project>{8990581D-3391-47A7-B269-CDC62F925D60}</Project>

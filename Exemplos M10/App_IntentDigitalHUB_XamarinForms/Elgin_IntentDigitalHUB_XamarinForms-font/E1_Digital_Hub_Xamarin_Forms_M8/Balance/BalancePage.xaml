@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Forms_Intent_Digital_Hub.Balance.BalancPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,60,0">
+            <StackLayout>
+                <StackLayout Style="{StaticResource bannerStack}">
+                    <Label Style="{StaticResource bannerLabel}" Text="BALANÇA" />
+                    <Image HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Source="elgin_logo.png"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="30,20,20,0">
+                <Label Style="{StaticResource txtBalancaValue}" Text="VALOR BALANÇA:" />
+                <Label x:Name="textReturnValueBalanca" Style="{StaticResource returnBalanca}" Text="00.00" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="30,40,20,0">
+                <Label Style="{StaticResource txtBalancaValue}" Text="MODELOS:" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="90">
+                    <RadioButton x:Name="DP3005Radio" Content="DP3005" IsChecked="True" />
+                    <RadioButton x:Name="SA110Radio" Content="SA110" />
+                    <RadioButton x:Name="DPSCRadio" Content="DPSC" />
+                    <RadioButton x:Name="DP30CKRadio" Content="DP30CK" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="30,10,20,0">                
+                <StackLayout Orientation="Horizontal">
+                    <Label Style="{StaticResource txtBalancaValue}" Text="PROTOCOLOS"/>
+                    <Picker x:Name="pckProtocol" SelectedIndexChanged="pckProtocol_SelectedIndexChanged" HorizontalOptions="Start" VerticalOptions="End" Title="Selecione o PROTOCOL">
+                        <Picker.Items>
+                            <x:String>PROTOCOL 0</x:String>
+                            <x:String>PROTOCOL 1</x:String>
+                            <x:String>PROTOCOL 2</x:String>
+                            <x:String>PROTOCOL 3</x:String>
+                            <x:String>PROTOCOL 4</x:String>
+                            <x:String>PROTOCOL 5</x:String>
+                            <x:String>PROTOCOL 6</x:String>
+                            <x:String>PROTOCOL 7</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15" Padding="0,10,0,0">
+                    <Button x:Name="buttonConfigurarBalanca" Style="{StaticResource actionButton}" Text="CONFIGURAR MODELO BALANÇA"></Button>
+                    <Button  x:Name="buttonLerPeso" Style="{StaticResource actionButton}" Text="LER PESO"></Button>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="0,90,0,0">
+                <Label Text="Intent Digital Hub - Xamarin Forms 1.1.0" TextColor="Gray" HorizontalOptions="End" FontSize="Medium" Padding="0,0,10,10"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout" x:Key="bannerStack">
+                <Setter Property="Orientation" Value="Horizontal"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HeightRequest" Value="50"/>
+            </Style>
+            <Style TargetType="Label" x:Key="bannerLabel">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="31"/>
+                <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Label" x:Key="returnBalanca">
+                <Setter Property="TextColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontAttributes" Value="None"/>
+            </Style>
+            <Style TargetType="Label" x:Key="txtBalancaValue">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontAttributes" Value="None"/>
+            </Style>
+            <Style TargetType="Button" x:Key="actionButton">
+                <Setter Property="WidthRequest" Value="310"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="BackgroundColor" Value="#0069A5"/>
+
+                <Setter Property="CornerRadius" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Padding" Value="0,-3,0,0"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+</ContentPage>

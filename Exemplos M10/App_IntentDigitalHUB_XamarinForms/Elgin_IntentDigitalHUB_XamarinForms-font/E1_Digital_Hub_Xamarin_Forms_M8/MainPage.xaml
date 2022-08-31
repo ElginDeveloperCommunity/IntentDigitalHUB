@@ -36,17 +36,28 @@
                         </StackLayout>
                     </Frame>
                 </StackLayout>
-                <Frame Style="{StaticResource largeButton}">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OpenSatPage" NumberOfTapsRequired="1" />
-                    </Frame.GestureRecognizers>
-                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-                        <Image Source="sat.png" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
-                        <Label Text="SAT" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
-                    </StackLayout>
-                </Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Frame Style="{StaticResource largeButton}">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OpenBalancePage" NumberOfTapsRequired="1" />
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                            <Image Source="balanca.png" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                            <Label Text="Balanca" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{StaticResource largeButton}">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OpenSatPage" NumberOfTapsRequired="1" />
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                            <Image Source="sat.png" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                            <Label Text="SAT" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
             </StackLayout>
-            <Label Grid.Row="2" Text="Intent Digital Hub - Xamarin Forms 1.0.0" VerticalOptions="End" HorizontalOptions="End" Padding="0,0,10,10"/>
+            <Label Grid.Row="2" Text="Intent Digital Hub - Xamarin Forms 1.1.0" VerticalOptions="End" HorizontalOptions="End" Padding="0,0,10,10"/>
         </Grid>
     </StackLayout>
 
