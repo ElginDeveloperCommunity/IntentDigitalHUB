@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".Activities.ElginPay.ElginPayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotobold"
+            android:text="ELGIN PAY"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Logo"
+            android:src="@drawable/elgin_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotobold"
+                android:gravity="center_vertical"
+                android:text="VALOR"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextInputValue"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/black"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNumberOfInstallments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotobold"
+                android:gravity="center_vertical"
+                android:text="NÚM DE PARCELAS"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextInputNumberOfInstallments"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/black"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/robotobold"
+                android:text="FORMAS DE PAGAMENTO:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonCreditOption"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/box"
+                    android:drawableTop="@drawable/card_icon"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="10dp"
+                    android:text="CRÉDITO"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/black"
+                    tools:ignore="SmallSp" />
+
+                <Button
+                    android:id="@+id/buttonDebitOption"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/box"
+                    android:drawableTop="@drawable/card_icon"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="10dp"
+                    android:text="DÉBITO"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/black"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutInstallmentsMethods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/robotobold"
+                android:text="TIPO DE PARCELAMENTO:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonStoreOption"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/box"
+                    android:drawableTop="@drawable/store_icon"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="10dp"
+                    android:text="Loja"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/black" />
+
+                <Button
+                    android:id="@+id/buttonAdmOption"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/box"
+                    android:drawableTop="@drawable/adm_icon"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="10dp"
+                    android:text="Adm"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/black"
+                    tools:ignore="SmallSp" />
+
+                <Button
+                    android:id="@+id/buttonAvistaOption"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/box"
+                    android:drawableTop="@drawable/card_icon"
+                    android:fontFamily="@font/robotobold"
+                    android:paddingTop="10dp"
+                    android:text="A vista"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/dividerGrey" />
+
+            <CheckBox
+
+                android:id="@+id/checkBoxCustomLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:fontFamily="@font/robotobold"
+                android:text="LAYOUT CUSTOMIZADO"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSendTransaction"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="Enviar Transação"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonCancelTransaction"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="Cancelar Transação"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonInitializeAdmOperation"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="Iniciar Operação Administrativa"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/text_footer_java_android"
+            android:textColor="#7F7F7F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
