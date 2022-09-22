@@ -1,0 +1,60 @@
+.box {
+  display: flex;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ion-input {
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100px;
+  --box-shadow: none;
+  --background: none;
+}
+
+.menuButton .printerOptionImg {
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.menuButtonSmall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  background: white;
+  justify-content: space-between;
+  height: 50px;
+  --box-shadow: none;
+  --background: none;
+}
+
+.menuButtonSmall .printerOptionImg {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.menuButton h4, .menuButtonSmall h4 {
+  color: black;
+  font-weight: bold;
+  font-size: x-small;
+  text-align: center;
+  font-size: 14px;
+}
+
+.radio {
+  margin-bottom: -5px;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Ionic_IntentDigitalHub_SmartPOS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

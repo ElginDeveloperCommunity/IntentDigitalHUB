@@ -1,0 +1,9 @@
+.resultContainer {
+  flex: 1;
+  margin-bottom: 60px;
+}
+
+.bordered {
+  border: 1px solid black;
+  border-radius: 20px;
+}
