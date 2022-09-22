@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".Activities.Printer.PrinterMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotobold"
+            android:gravity="center"
+            android:text="IMPRESSORA"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/elgin_logo" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            >
+
+            <RadioGroup
+                android:id="@+id/radioGroupPrinterConnection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonConnectPrinterIntern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/robotobold"
+                    android:text="IMP. INTERNA"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonConnectPrinterExtern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="IMP. EXTERNA"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextInputIP"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/robotobold"
+                android:inputType="textPersonName"
+                android:text="IP:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPrinterText"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box"
+            android:drawableTop="@drawable/printer_text"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="IMPRESSÃO DE TEXTO"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/buttonPrinterBarCode"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box"
+            android:drawableTop="@drawable/printer_bar_code"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="IMPRESSÃO DE CÓDIGO DE BARRAS"
+            android:textColor="@color/black"
+            android:textSize="7sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/buttonPrinterImage"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box"
+            android:drawableTop="@drawable/printer_image"
+            android:gravity="center_horizontal"
+            android:paddingTop="18dp"
+            android:text="IMPRESSÃO DE IMAGEM"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/buttonStatusPrinter"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:drawableLeft="@drawable/printer_status"
+            android:fontFamily="@font/robotobold"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text=" STATUS IMPRESSORA"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:backgroundTint="@color/black"
+            tools:ignore="SmallSp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/text_footer_java_android"
+            android:textColor="#7F7F7F"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

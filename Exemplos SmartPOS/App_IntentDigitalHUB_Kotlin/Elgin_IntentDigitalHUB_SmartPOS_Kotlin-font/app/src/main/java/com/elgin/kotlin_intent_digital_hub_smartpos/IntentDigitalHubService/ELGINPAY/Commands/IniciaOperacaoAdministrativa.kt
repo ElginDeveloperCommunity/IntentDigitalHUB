@@ -1,0 +1,7 @@
+package com.elgin.kotlin_intent_digital_hub_smartpos.IntentDigitalHubService.ELGINPAY.Commands
+
+import com.elgin.kotlin_intent_digital_hub_smartpos.IntentDigitalHubService.ELGINPAY.ElginPayCommand
+import com.elgin.kotlin_intent_digital_hub_smartpos.IntentDigitalHubService.IntentDigitalHubModule
+
+
+class IniciaOperacaoAdministrativa() : ElginPayCommand(functionName= "iniciaOperacaoAdministrativa") {}
