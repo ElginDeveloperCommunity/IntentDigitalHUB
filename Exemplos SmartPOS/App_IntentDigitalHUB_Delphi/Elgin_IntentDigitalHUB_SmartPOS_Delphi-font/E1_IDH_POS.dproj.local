@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/30 15:08:12.000.272,=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/14 13:31:37.000.379,=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/14 13:32:17.000.222,=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/17 08:55:16.000.175,=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 10:23:21.000.253,=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 10:24:11.000.056,C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\MainForm.fmx</Transaction>
+    <Transaction>2022/08/19 10:24:11.000.056,C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\MainForm.pas</Transaction>
+    <Transaction>2022/08/19 10:25:06.000.191,C:\Users\luizf\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\luizf\Documents\Embarcadero\Studio\Projects\E1_IDH_POS.dproj</Transaction>
+    <Transaction>2022/08/19 10:46:58.000.907,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 10:47:18.000.036,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\BarCodeForm.fmx=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.fmx</Transaction>
+    <Transaction>2022/08/19 10:47:18.000.036,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\BarCodeForm.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:08:48.000.240,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:09:22.000.388,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ElginPayForm.fmx=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.fmx</Transaction>
+    <Transaction>2022/08/19 11:09:22.000.388,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ElginPayForm.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:10:41.000.395,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:12:13.000.884,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ImpressoraForm.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:12:13.000.885,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ImpressoraForm.fmx=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.fmx</Transaction>
+    <Transaction>2022/08/19 11:57:51.000.324,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/19 11:57:57.000.304,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\BarCode.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/22 11:31:35.000.417,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/22 11:31:48.000.168,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Printer.pas</Transaction>
+    <Transaction>2022/08/22 11:56:19.000.450,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas</Transaction>
+    <Transaction>2022/08/22 11:56:29.000.165,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Unit1.pas=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ToastMessage.pas</Transaction>
+    <Transaction>2022/08/23 00:37:18.000.083,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\elgin_logo_default_print_image.png</Transaction>
+    <Transaction>2022/08/23 00:37:18.000.181,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsat.xml</Transaction>
+    <Transaction>2022/08/23 00:37:18.000.232,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsatcancelamento.xml</Transaction>
+    <Transaction>2022/08/23 00:37:18.000.143,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlnfce.xml</Transaction>
+    <Transaction>2022/08/23 00:40:24.000.435,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlnfce.xml=</Transaction>
+    <Transaction>2022/08/23 00:40:24.000.503,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsatcancelamento.xml=</Transaction>
+    <Transaction>2022/08/23 00:40:24.000.472,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsat.xml=</Transaction>
+    <Transaction>2022/08/23 00:40:24.000.388,C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\elgin_logo_default_print_image.png=</Transaction>
+    <Transaction>2022/08/23 00:43:35.000.602,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\elgin_logo_default_print_image.png</Transaction>
+    <Transaction>2022/08/23 00:43:35.000.769,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsatcancelamento.xml</Transaction>
+    <Transaction>2022/08/23 00:43:35.000.728,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlsat.xml</Transaction>
+    <Transaction>2022/08/23 00:43:35.000.666,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\assets\xmlnfce.xml</Transaction>
+    <Transaction>2022/08/23 18:40:04.000.229,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\ElginPayService.pas</Transaction>
+    <Transaction>2022/08/23 18:40:04.000.187,=C:\Users\luizf\Desktop\Elgin\E1_IDH_POS\Elgin.Types.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="WP19121Q20008016" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

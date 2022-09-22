@@ -1,0 +1,4 @@
+.\assets\internal\xmlsatcancelamento.xml
+.\assets\internal\elgin_logo_default_print_image.png
+.\assets\internal\xmlnfce.xml
+.\assets\internal\xmlsat.xml
